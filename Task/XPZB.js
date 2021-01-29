@@ -80,6 +80,7 @@ if ($.isNode()) {
  CASH = process.env.XP_CASH || 0;
  // 没有设置 XP_live 则默认为 0 不开启
  LIVE = process.env.XP_live || 0;
+ LIVE = 120;
 } 
 if ($.isNode() && process.env.XP_iboxpayHEADER) {
   COOKIES_SPLIT = process.env.COOKIES_SPLIT || "\n";
